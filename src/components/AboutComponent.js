@@ -9,8 +9,7 @@ import {
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderLeader(props) {
-  const leader = props.leader;
+function RenderLeader({ leader }) {
   return (
     <div key={leader.id} className="col-12 mt-5">
       <Media tag="li">
@@ -19,6 +18,7 @@ function RenderLeader(props) {
         </Media>
         <Media body className="ml-5">
           <Media heading>{leader.name}</Media>
+          <h6>{leader.designation}</h6>
           <p>{leader.description}</p>
         </Media>
       </Media>
