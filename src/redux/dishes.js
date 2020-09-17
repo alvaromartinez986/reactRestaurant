@@ -16,7 +16,6 @@ export const Dishes = (
         errMess: null,
         dishes: action.payload
       };
-      return;
     case ActionTypes.DISHES_LOADING:
       return {
         ...state,
